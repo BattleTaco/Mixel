@@ -1,0 +1,17 @@
+How to test that Mixel works:
+
+1. Plug adafruit bonnet into raspberry pi 4
+2. Use 5v charger and plug into adafruit bonnet
+3. SSH into raspberry pi 4 or use VNC Viewer
+
+-- Set up Raspberry pi 4 if you havent done so already --
+-- Download rpi-rgb-led-matrix repo from adafruit --
+-- Follow instrcutions to set up that environment --
+
+4. Open Terminal
+5. Follow these instructions below to test sample...
+    a. cd bindings
+    b. cd python
+    c. cd samples
+    d. sudo python3 rotating-block-generator.py --led-cols=64 --led-rows=32 --led-gpio-mapping=adafruit-hat --led-slowdown-gpio=4
+
